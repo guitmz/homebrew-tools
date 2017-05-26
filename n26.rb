@@ -1,8 +1,8 @@
 class N26 < Formula
   desc "CLI tool for N26 Bank"
   homepage "https://github.com/guitmz/n26"
-  url "https://github.com/guitmz/n26/releases/download/1.0.0/n26-cli-1.0.0_darwin_amd64.zip"
-  sha256 "de865d194301635abfd93ff126177e2d449316ff031b3ecead564ca6e8c38d77"
+  url "https://github.com/guitmz/n26/releases/download/1.1.0/n26-cli-1.1.0-darwin-amd64.zip"
+  sha256 "5ebfeab28a2dbc86840dc44f4dd07236ea791e71204093d5d7954c9e26d7e8f1"
 
   bottle :unneeded
 
