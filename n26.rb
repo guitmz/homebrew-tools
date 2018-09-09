@@ -1,9 +1,9 @@
 class N26 < Formula
   desc "CLI tool for N26 Bank"
   homepage "https://github.com/guitmz/n26"
-  url "https://github.com/guitmz/n26/releases/download/1.4.3/n26-cli-1.4.3-darwin-amd64.zip"
-  version "1.4.3"
-  sha256 "39f7211bfb91650e2cc4365c174a6319df9cecc2bb9b192a295a604e45a71e32"
+  url "https://github.com/guitmz/n26/releases/download/1.4.4/n26-cli-1.4.4-darwin-amd64.zip"
+  version "1.4.4"
+  sha256 "545034820e48d9ff5b4f6c20636d3d69ddb894ec874a48ea9b4a1362f0698c71"
 
   def install
     bin.install "n26"
