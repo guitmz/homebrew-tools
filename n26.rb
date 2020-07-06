@@ -2,16 +2,16 @@
 class N26 < Formula
   desc "CLI tool for N26 Bank"
   homepage "https://github.com/guitmz/n26"
-  version "1.4.9"
+  version "1.5.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/guitmz/n26/releases/download/1.4.9/n26-cli-1.4.9-darwin-amd64.zip"
-    sha256 "3c3e06b5ce94c84f8ebc6814f93885f68f23cb8d53d1c6efc83157ae45266c28"
+    url "https://github.com/guitmz/n26/releases/download/1.5.0/n26-cli-1.5.0-darwin-amd64.zip"
+    sha256 "739f21d23eea6f1de054b6131b48b395915d11165c1b31c8d1c6679c4d6fb38e"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/guitmz/n26/releases/download/1.4.9/n26-cli-1.4.9-linux-amd64.zip"
-      sha256 "17620bcad0a9ed53b3005936f69c6df9c8c5ae794dcf9c63391d14fa83a731e1"
+      url "https://github.com/guitmz/n26/releases/download/1.5.0/n26-cli-1.5.0-linux-amd64.zip"
+      sha256 "028d49346958f47f1154432313149ea1290c6e0991f92a738caffc7919dac75e"
     end
   end
 
