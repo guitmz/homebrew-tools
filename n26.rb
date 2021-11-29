@@ -5,20 +5,28 @@
 class N26 < Formula
   desc "CLI tool for N26 Bank"
   homepage "https://github.com/guitmz/n26"
-  version "1.5.3"
-  bottle :unneeded
+  version "1.5.4"
 
-  if OS.mac?
-    url "https://github.com/guitmz/n26/releases/download/1.5.3/n26-cli-1.5.3-darwin-amd64.zip"
-    sha256 "21e23d12b107744b3353c80c9f35d2a1bf05be7f31966fb8b11560d85f90b7e4"
-  end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/guitmz/n26/releases/download/1.5.3/n26-cli-1.5.3-linux-amd64.zip"
-    sha256 "55f474aadab64f917cad880e29a4c3e62d1f68bc1439a3c5c8b34b5372f5a82f"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/guitmz/n26/releases/download/1.5.4/n26-cli-1.5.4-darwin-amd64.zip"
+      sha256 "2f3ef034c3e61f36a51dea54785836cc83242ada8fae746f35402f0af998aca8"
+
+      def install
+        bin.install "n26"
+      end
+    end
   end
 
-  def install
-    bin.install "n26"
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/guitmz/n26/releases/download/1.5.4/n26-cli-1.5.4-linux-amd64.zip"
+      sha256 "fd859bc37fd1d6591ba0381fd3878dba3099884194a55fe444f59522c0f01cae"
+
+      def install
+        bin.install "n26"
+      end
+    end
   end
 
   test do
