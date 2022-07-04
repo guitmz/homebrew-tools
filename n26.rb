@@ -5,23 +5,31 @@
 class N26 < Formula
   desc "CLI tool for N26 Bank"
   homepage "https://github.com/guitmz/n26"
-  version "1.5.4"
+  version "1.5.5"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/guitmz/n26/releases/download/1.5.4/n26-cli-1.5.4-darwin-amd64.zip"
-      sha256 "2f3ef034c3e61f36a51dea54785836cc83242ada8fae746f35402f0af998aca8"
+    url "https://github.com/guitmz/n26/releases/download/1.5.5/n26-cli-1.5.5-darwin-amd64.zip"
+    sha256 "f44466449fc48afdc112d6b7e6bf749ee75c2d5fa10fc9191d2b53ce88e124e7"
 
-      def install
-        bin.install "n26"
+    def install
+      bin.install "n26"
+    end
+
+    if Hardware::CPU.arm?
+      def caveats
+        <<~EOS
+          The darwin_arm64 architecture is not supported for the N26
+          formula at this time. The darwin_amd64 binary may work in compatibility
+          mode, but it might not be fully supported.
+        EOS
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/guitmz/n26/releases/download/1.5.4/n26-cli-1.5.4-linux-amd64.zip"
-      sha256 "fd859bc37fd1d6591ba0381fd3878dba3099884194a55fe444f59522c0f01cae"
+      url "https://github.com/guitmz/n26/releases/download/1.5.5/n26-cli-1.5.5-linux-amd64.zip"
+      sha256 "e2e266a0f0bcadcfe92e0c433aa6b636884fa2255709df0ba4e82ed832ba03f8"
 
       def install
         bin.install "n26"
