@@ -1,28 +1,28 @@
 class Syscall < Formula
   desc "Explore Linux system calls from your terminal"
   homepage "https://github.com/guitmz/syscall"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/guitmz/syscall/releases/download/v0.1.0/syscall_v0.1.0_darwin_arm64.tar.gz"
-      sha256 "2f45b14efafeb2fff493f5c16c9db5b73daaeac2284330f8f374c973a08e1848"
+      url "https://github.com/guitmz/syscall/releases/download/v0.2.0/syscall_v0.2.0_darwin_arm64.tar.gz"
+      sha256 "bcdff8a541ada9841989e981498cdb8e2b8101b5ae664a137bb24c97dbb0b2f0"
     end
     on_intel do
-      url "https://github.com/guitmz/syscall/releases/download/v0.1.0/syscall_v0.1.0_darwin_amd64.tar.gz"
-      sha256 "ad8c2819131a1ca11f4a05d4ab187fc37b7039777d46b66bc59aa6f099bde2d4"
+      url "https://github.com/guitmz/syscall/releases/download/v0.2.0/syscall_v0.2.0_darwin_amd64.tar.gz"
+      sha256 "3100a90153932a34140ee8e3babac13217a2a8ef96ffe16d79dfb7afbdd83918"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/guitmz/syscall/releases/download/v0.1.0/syscall_v0.1.0_linux_arm64.tar.gz"
-      sha256 "cd94380c665dccd96289659dcb08144042d498272bce33f5198deb659a136491"
+      url "https://github.com/guitmz/syscall/releases/download/v0.2.0/syscall_v0.2.0_linux_arm64.tar.gz"
+      sha256 "1f14ed38e4455246f71f366f5f668b4a266dd1021939a571165ab28802003dcc"
     end
     on_intel do
-      url "https://github.com/guitmz/syscall/releases/download/v0.1.0/syscall_v0.1.0_linux_amd64.tar.gz"
-      sha256 "b97b3820bc0992d3ed924908592833cc589c8bd5436cb13f8ef9c8303bd563b3"
+      url "https://github.com/guitmz/syscall/releases/download/v0.2.0/syscall_v0.2.0_linux_amd64.tar.gz"
+      sha256 "90036629befc6fc5ef5370ba4ab44369381f088a1b11622280647f2d4c402a44"
     end
   end
 
